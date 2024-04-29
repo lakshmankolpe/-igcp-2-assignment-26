@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment</title>
 </head>
+
 <body>
     <script>
-        
-           const students = ['Amol','Surav','Ram','krushna','ganesh']
-           console.log(students);
 
-      
-       let count = students.length;
+        const students = ['Amol', 'Surav', 'Ram', 'Krushna', 'Ganesh']
+        console.log(students);
+
+
+        let count = students.length;
         console.log(count);
 
-        
-        students.push('vishal');
-        console.log( students)
+
+        students.push('Vishal');
+        console.log(students)
 
         students.pop();
         console.log(students);
@@ -27,24 +29,57 @@
 
         students.shift()
         console.log(students);
-      
+
         students.push('Raviraj')
         console.log(students)
-        
+
         students.shift('Raviraj')
         console.log(students)
 
-        students.splice(1,2,)
+        students.splice(1, 2,)
         console.log(students)
 
-        students.splice(2,1,"lakshman","Raj","dattu")
+        students.splice(2, 1, "Lakshman", "Raj", "Dattu")
         console.log(students)
-        
 
-        
-         
-        
+        students.splice(5, 0, "John", "Kajal", "Khruti")
+        console.log(students)
+
+
+
+        const colors = ['red', 'black', 'darkblue', 'brown',]
+        console.log(colors.includes('red'))
+        console.log(colors.includes('pink'))
+
+        console.log(Array.isArray(colors))
+
+        console.log(typeof (colors))
+
+        students.reverse()
+       console.log(students)
+
+        students.sort()
+       console.log(students)
+
+       students.sort().reverse()
+       console.log(students)
+
+
+         let allStudents =students.join("#")
+         console.log(allStudents)
+
+       
+
+       
+
+       
+
+
+
+
+
 
     </script>
 </body>
+
 </html>
